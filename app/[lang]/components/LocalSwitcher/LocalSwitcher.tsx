@@ -6,7 +6,7 @@ import { i18n } from '@/i18n.config';
 
 const LocalSwitcher = () => {
     const pathName = usePathname();
-    const currentLocale = pathName?.split("/")[1];
+    // const currentLocale = pathName?.split("/")[1];
     const router = useRouter();
 
     const redirectPath = (locale: string) => {
@@ -18,27 +18,23 @@ const LocalSwitcher = () => {
     };
 
     return (
-        <div>
-            <select
-            onChange={(e) => redirectPath(e.target.value)}
-            defaultValue={currentLocale}
-            className="flex gap-x-3 bg-cdd-black text-center align-middle uppercase text-white sm:text-xs md:text-sm lg:text-base"
-            id="language_switcher"
-        >
+        <>
             {i18n.locales.map((locale: string) => {
                 return (
-                    <option
-                        // eslint-disable-next-line jsx-a11y/aria-props
-                        aria-description={`pick ${locale} language`}
-                        value={locale}
+                    <div
+                        onClick={() => redirectPath(locale)}
                         key={locale}
+                        // className={
+                        //     currentLocale === locale
+                        //         ? "text-gray-500"
+                        //         : "text-gray-300 hover:text-gray-500"
+                        // }
                     >
-                        {locale}
-                    </option>
+                        {locale.toLocaleUpperCase()}
+                    </div>
                 );
             })}
-        </select>
-        </div>
+        </>
     )
 }
 

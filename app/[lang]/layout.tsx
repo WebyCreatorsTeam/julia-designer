@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
+import { rubik } from "./fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,10 +17,12 @@ export default function RootLayout({
 }>) {
   // console.log(lang)
   return (
-    <html lang={lang}>
-      <body      >
-        <Navbar lang={lang}/>
-        {children}
+    <html lang={lang} dir={lang === "he" ? "rtl" : "ltr"}>
+      <body className={rubik.className}     >
+        <Navbar lang={lang} />
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );

@@ -2,26 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.pageWidth {
+  max-width: 1000px;
+  min-width: 360px;
+  margin: 0 auto;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fcfbf7;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1 {
+  font-size: 60px;
+  text-align: center;
+  background-image: url("./images/Pattern-about.png");
+  background-repeat: no-repeat;
+  height: 179px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #17395c;
+  margin: 6.4008vh 0;
+  /* font-family: 'Playfair Display', serif;
+  font-weight: 700; */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 1.469vh 0;
+}
+
+nav div {
+  cursor: pointer;
+}
+nav span {
+  color: #c24229;
+}
+
+.aboutSection {
+  display: flex;
+  /* justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 1.469vh 0; */
+}
+
+.aboutSection img{
+  width: 282px;
+  height: 282px;
+  margin: 0 24px;
+}
+
+.aboutSection p {
+  font-size: 16px;
+  margin-bottom: 15px;
 }
