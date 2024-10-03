@@ -16,12 +16,10 @@ const Footer = () => {
                     <Image src={lin} alt={"Linkedin Icon"} width={38} height={38} />
                 </Link>
             </div>
-            {/* <div> */}
             <Link href="mailto:rbernally@gmail.com">
                 <Image src={email} alt={"Email Icon"} width={17} height={14} />
                 <p>rbernally@gmail.com</p>
             </Link>
-            {/* </div> */}
             <p>Julia Voronina 2024</p>
         </footer>
     )
