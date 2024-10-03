@@ -4,12 +4,12 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <section className='hero'>
-            <section className='hero-background'></section>
-            {/* <Image src={hero} alt="Julia" width={1440} height={300} /> */}
-            {/* <Image src={hero} alt="Julia" width={1920} height={300} /> */}
-        </section>
+        <section className='hero-background'></section>
     )
 }
 
 export default Hero
+// <section className='hero'>
+{/* <Image src={hero} alt="Julia" width={1440} height={300} /> */ }
+{/* <Image src={hero} alt="Julia" width={1920} height={300} /> */ }
+// </section>
