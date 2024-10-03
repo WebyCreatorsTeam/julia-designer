@@ -1,6 +1,7 @@
 {
     "navbar":{
         "links":{
+            "home": "דף הבית",
             "about":"אודות",
             "portfolio":"פורטפוליו",
             "contact":"יצירת קשר"

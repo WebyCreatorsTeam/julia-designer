@@ -89,7 +89,7 @@ nav span {
 
 .projectItem h2 {
   font-size: 24px;
-  margin: 24px 0 0 24px;
+  margin: 24px 24px 0 24px;
   font-weight: 700;
   color: #efb758;
 }
@@ -97,7 +97,7 @@ nav span {
 .projectItem p {
   line-height: 1.5;
   font-size: 20px;
-  margin: 24px 0 0 24px;
+  margin: 24px 24px 0 24px;
   color: #ffffff;
 }
 
