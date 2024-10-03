@@ -9,10 +9,10 @@ const Footer = () => {
     return (
         <footer>
             <div className='socialLinks'>
-                <Link href="" target='_blank'>
-                    <Image src={be} alt={"Becanse Icon"} width={38} height={38} />
+                <Link href="https://www.behance.net/rbernally3097" target='_blank'>
+                    <Image src={be} alt={"Behance Icon"} width={38} height={38} />
                 </Link>
-                <Link href="" target='_blank'>
+                <Link href="https://www.linkedin.com/in/julia-voroninail" target='_blank'>
                     <Image src={lin} alt={"Linkedin Icon"} width={38} height={38} />
                 </Link>
             </div>
