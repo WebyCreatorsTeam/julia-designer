@@ -1,6 +1,6 @@
 import Image from "next/image";
 // import hero from './images/hero-big.png'
-import hero2 from './images/hero-big2.png'
+import hero2 from './images/hero-big22.svg'
 import Projects from "./components/Projects/Projects";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -16,7 +16,7 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
           // className="hidden xl:block"
           className="hero-image"
           // style={{ objectFit: "cover" }}
-          src={hero2} alt="Julia" width={1440} height={300} />
+          src={hero2} alt="Julia" width={1920} height={300} />
       </section>
       {/* <section> */}
       <Projects lang={lang} />

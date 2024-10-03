@@ -95,15 +95,15 @@ nav span {
 }
 
 .projectItem p {
-  line-height: 1;
-  font-size: 16px;
+  line-height: 1.5;
+  font-size: 20px;
   margin: 24px 0 0 24px;
   color: #ffffff;
 }
 
 .projectItem a {
   background-color: #efb758;
-  padding: 1% 2%;
+  padding: 2% 3%;
   position: absolute;
   bottom: 50px;
   font-weight: 700;
@@ -112,9 +112,10 @@ nav span {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 160px;
-  height: 30px;
-  font-size: 16px;
+  /* width:fit-content; */
+  /* width: 160px;
+  height: 30px; */
+  font-size: 20px;
   color: #17395c;
   box-shadow:
     0px 71px 20px rgba(171, 134, 68, 0.01),
