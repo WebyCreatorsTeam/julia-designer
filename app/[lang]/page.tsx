@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { getDictionary } from "./dictionaries";
-// import Image from "next/image";
-// import hero from './images/hero.png'
+import Image from "next/image";
+import hero from './images/hero.png'
 import Hero from "./components/Hero/Hero";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -11,7 +11,7 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
   return (
     <section>
       <Hero />
-      
+      <Image src={hero} alt="Julia" width={1920} height={300} />
       {/* <p>{dict.home}</p> */}
     </section>
   );
