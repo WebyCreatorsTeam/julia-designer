@@ -4,7 +4,7 @@
 
 .pageWidth {
   max-width: 1000px;
-  min-width: 360px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -23,8 +23,6 @@ h1 {
   justify-content: center;
   color: #17395c;
   margin: 6.4008vh 0;
-  /* font-family: 'Playfair Display', serif;
-  font-weight: 700; */
 }
 
 nav {
@@ -44,13 +42,9 @@ nav span {
 
 .aboutSection {
   display: flex;
-  /* justify-content: center;
-  align-items: center;
-  gap: 24px;
-  padding: 1.469vh 0; */
 }
 
-.aboutSection img{
+.aboutSection img {
   width: 282px;
   height: 282px;
   margin: 0 24px;
@@ -59,4 +53,33 @@ nav span {
 .aboutSection p {
   font-size: 16px;
   margin-bottom: 15px;
+}
+
+footer {
+  max-width: 800px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+  background-image: url("./images/footer-orange.png"), url("./images/footer-yellow.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    left top,
+    right bottom;
+  margin: 50px auto;
+}
+
+footer .socialLinks,
+footer a {
+  display: flex;
+  align-items: center;
+}
+
+footer .socialLinks {
+  gap: 24px;
+}
+
+footer a {
+  gap: 10px;
 }
