@@ -36,8 +36,28 @@ nav {
 nav div {
   cursor: pointer;
 }
+
 nav span {
   color: #c24229;
+}
+
+.hero {
+  position: relative;
+  width: 991px;
+  height: 556px;
+  margin: 47px auto;
+}
+
+.hero-background {
+  background-color: #17395c;
+  background-image: url("./images/Pattern-hero.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  /* margin: 47px auto; */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .aboutSection {
@@ -53,6 +73,7 @@ nav span {
 .aboutSection p {
   font-size: 16px;
   margin-bottom: 15px;
+  color: #17395C;
 }
 
 footer {
