@@ -105,8 +105,8 @@ nav span {
   background-color: #efb758;
   padding: 2% 3%;
   position: absolute;
-  bottom: 50px;
   font-weight: 700;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;

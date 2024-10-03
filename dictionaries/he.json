@@ -15,28 +15,28 @@
             "title": "Анастасия",
             "desc": "Сайт для ногтей",
             "url": "https://anastasiya-ganeeva.netlify.app",
-            "image": "nastya.png",
+            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/ouqjraoeytxq10ihydyw.png",
             "urlText":"Смотреть проект"
         },
         {
             "title": "Сайт для преподавателя программирования Web Learning",
             "desc": "Многостраничный сайт, включающий в себя так же дешборд. Имеет дневную и ночную темы для удобства использования.",
             "url": "",
-            "image": "web-learning.png",
+            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/b5ply2jvpxys0b2jkizt.png",
             "urlText":"Смотреть проект"
         },
         {
             "title": "Обложка",
             "desc": "Книжка это всегда хорошо",
             "url": "",
-            "image": "book.png",
+            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/psjyatq4bhshr45xnz1q.png",
             "urlText":"Смотреть проект"
         },
         {
             "title": "Фитаняшка",
             "desc": "Телечка которая чемуто обучает в фитнесе",
             "url": "https://sharon-fitness.vercel.app",
-            "image": "sharon.png",
+            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/awxexf2mwrarwiu79sj0.png",
             "urlText":"Смотреть проект"
         }
     ]
