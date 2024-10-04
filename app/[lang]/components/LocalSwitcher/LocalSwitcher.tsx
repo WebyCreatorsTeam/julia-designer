@@ -19,21 +19,21 @@ const LocalSwitcher = () => {
 
     return (
         <>
-            {i18n.locales.map((locale: string) => {
-                return (
-                    <div
-                        onClick={() => redirectPath(locale)}
-                        key={locale}
-                        // className={
-                        //     currentLocale === locale
-                        //         ? "text-gray-500"
-                        //         : "text-gray-300 hover:text-gray-500"
-                        // }
-                    >
-                        {locale.toLocaleUpperCase()}
-                    </div>
-                );
-            })}
+            {pathName.length <= 3 && (
+                <>
+                    {i18n.locales.map((locale: string) => {
+                        return (
+                            <div
+                                onClick={() => redirectPath(locale)}
+                                key={locale}
+                            >
+                                {locale.toLocaleUpperCase()}
+                            </div>
+                        );
+                    })}
+                    <span>|</span>
+                </>
+            )}
         </>
     )
 }

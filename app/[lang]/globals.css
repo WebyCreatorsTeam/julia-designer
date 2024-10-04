@@ -60,6 +60,12 @@ nav span {
   justify-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .projectItem {
   position: relative;
   display: flex;
@@ -68,6 +74,13 @@ nav span {
   width: 486px;
   height: 486px;
   margin: 2.5%;
+}
+
+@media screen and (max-width: 768px) {
+  .projectItem {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .projectItem:hover .projectText {
@@ -112,9 +125,6 @@ nav span {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width:fit-content; */
-  /* width: 160px;
-  height: 30px; */
   font-size: 20px;
   color: #17395c;
   box-shadow:
@@ -124,6 +134,27 @@ nav span {
     0px 11px 11px rgba(171, 134, 68, 0.26),
     0px 3px 6px rgba(171, 134, 68, 0.29);
   border-radius: 24px;
+}
+
+.moreProjects {
+  background: rgb(194, 66, 41);
+  background: linear-gradient(90deg, rgba(194, 66, 41, 1) 0%, rgba(207, 90, 40, 1) 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 1% 2%;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 61px auto;
+  box-shadow:
+    0px 71px 20px rgba(171, 134, 68, 0.01),
+    0px 45px 18px rgba(171, 134, 68, 0.04),
+    0px 25px 15px rgba(171, 134, 68, 0.15),
+    0px 11px 11px rgba(171, 134, 68, 0.26),
+    0px 3px 6px rgba(171, 134, 68, 0.29);
+  width: 35%;
 }
 
 .aboutSection {

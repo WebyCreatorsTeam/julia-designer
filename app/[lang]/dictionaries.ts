@@ -18,7 +18,7 @@
 
 // import "server-only";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const dictionaries: any
+const dictionaries
 // : Dictionary
  = {
     en: () => import("@/dictionaries/en.json").then((module) => module.default),
@@ -31,6 +31,6 @@ export const getDictionary = (locale: string
 ) => {
     // console.log(locale)
     // if (admin) return dictionaries["en"]();
-    const dictionary = dictionaries[locale]();
+    const dictionary = dictionaries[locale as keyof typeof dictionaries]();
     return dictionary;
 };

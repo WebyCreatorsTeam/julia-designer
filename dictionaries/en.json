@@ -1,44 +1,41 @@
 {
-    "navbar":{
-        "links":{
+    "navbar": {
+        "links": {
             "home": "Home",
-            "about":"About",
-            "portfolio":"Portfolio",
-            "contact":"Contact"
+            "about": "About",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
         }
     },
     "about": {
         "title": "About Me",
-        "description":"<p>My path to design began in childhood - drawing and designing diaries was my main hobby. As a teenager, I experimented with forum design, creating designs and implementing ideas in Photoshop.</p><p>While studying at college, I was lucky enough to start working as a junior designer in a printing house. From that moment on, I began my professional path.</p><p>Today, I live in Israel and dream of making the world \"tomorrow\" even more beautiful and understandable than \"today\". In addition to my main specialization - print design and prepress, I plunged into the world of UX / UI, which undoubtedly only expands my capabilities in achieving my goals.</p><p>My skills: branding and corporate identity, UX / UI design, print design, prepress.</p>"
+        "description": "<p>My path to design began in childhood - drawing and designing diaries was my main hobby. As a teenager, I experimented with forum design, creating designs and implementing ideas in Photoshop.</p><p>While studying at college, I was lucky enough to start working as a junior designer in a printing house. From that moment on, I began my professional path.</p><p>Today, I live in Israel and dream of making the world \"tomorrow\" even more beautiful and understandable than \"today\". In addition to my main specialization - print design and prepress, I plunged into the world of UX / UI, which undoubtedly only expands my capabilities in achieving my goals.</p><p>My skills: branding and corporate identity, UX / UI design, print design, prepress.</p>"
     },
     "project": [
         {
             "title": "Анастасия",
             "desc": "Сайт для ногтей",
             "url": "https://anastasiya-ganeeva.netlify.app",
-            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/ouqjraoeytxq10ihydyw.png",
-            "urlText":"Смотреть проект"
+            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/ouqjraoeytxq10ihydyw.png"
         },
         {
-            "title": "Сайт для преподавателя программирования Web Learning",
-            "desc": "Многостраничный сайт, включающий в себя так же дешборд. Имеет дневную и ночную темы для удобства использования.",
+            "title": "Website for programming teacher Web Learning",
+            "desc": "Multi-page site, including a dashboard. Has day and night themes for ease of use.",
             "url": "",
-            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/b5ply2jvpxys0b2jkizt.png",
-            "urlText":"Смотреть проект"
+            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/b5ply2jvpxys0b2jkizt.png"
         },
         {
             "title": "Обложка",
             "desc": "Книжка это всегда хорошо",
             "url": "",
-            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/psjyatq4bhshr45xnz1q.png",
-            "urlText":"Смотреть проект"
+            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/psjyatq4bhshr45xnz1q.png"
         },
         {
             "title": "Фитаняшка",
             "desc": "Телечка которая чемуто обучает в фитнесе",
             "url": "https://sharon-fitness.vercel.app",
-            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/awxexf2mwrarwiu79sj0.png",
-            "urlText":"Смотреть проект"
+            "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/awxexf2mwrarwiu79sj0.png"
         }
-    ]
+    ],
+    "moreProjectText": "More Projects"
 }

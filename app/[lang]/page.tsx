@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import hero from './images/hero-big.png'
+import hero from './images/hero-small.svg'
 import hero2 from './images/hero-big22.svg'
 import Projects from "./components/Projects/Projects";
 
@@ -9,18 +9,14 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
   return (
     <section className="">
       <section className="hero">
-        {/* <Image
-          // className="xl:hidden block" 
-          src={hero} alt="Julia" width={1440} height={300} /> */}
         <Image
-          // className="hidden xl:block"
-          className="hero-image"
-          // style={{ objectFit: "cover" }}
+          className="hidden lg:block"
           src={hero2} alt="Julia" width={1920} height={300} />
+        <Image
+          className="lg:hidden block"
+          src={hero} alt="Julia" width={1440} height={300} />
       </section>
-      {/* <section> */}
       <Projects lang={lang} />
-      {/* </section> */}
     </section>
   );
 }
