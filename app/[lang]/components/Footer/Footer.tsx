@@ -4,10 +4,12 @@ import React from 'react'
 import be from './images/be.png'
 import lin from './images/lin.png'
 import email from "./images/email.png"
+import { getDictionary } from '../../dictionaries'
 
-const Footer = () => {
+const Footer = async ({ lang }: { lang: string }) => {
+    const dict = await getDictionary(lang);
     return (
-        <footer>
+        <footer id={dict.navbar.links.contact}>
             <div className='socialLinks'>
                 <Link href="https://www.behance.net/rbernally3097" target='_blank'>
                     <Image src={be} alt={"Behance Icon"} width={38} height={38} />

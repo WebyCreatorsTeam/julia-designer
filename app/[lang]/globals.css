@@ -8,6 +8,10 @@
   margin: 0 auto;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fcfbf7;
 }
