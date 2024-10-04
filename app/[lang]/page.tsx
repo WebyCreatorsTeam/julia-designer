@@ -3,7 +3,6 @@ import hero from './images/hero-small.svg'
 import hero2 from './images/hero-big22.svg'
 import Projects from "./components/Projects/Projects";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default async function Home({ params: { lang } }: { params: { lang: string }; }) {
 
   return (

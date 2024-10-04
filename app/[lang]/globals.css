@@ -205,3 +205,25 @@ footer .socialLinks {
 footer a {
   gap: 10px;
 }
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 80px 0;
+  /* margin-bottom: 80px; */
+}
+.filter a {
+  background-color: #f3ede5;
+  color: #17395c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 48px;
+  margin: 0 8px;
+  border-radius: 24px;
+}
+
+.filter .active {
+  background-color: #efb758;
+}

@@ -13,24 +13,28 @@
     },
     "project": [
         {
+            "type": "web-design",
             "title": "Анастасия",
             "desc": "Сайт для ногтей",
             "url": "https://anastasiya-ganeeva.netlify.app",
             "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/ouqjraoeytxq10ihydyw.png"
         },
         {
+            "type": "web-design",
             "title": "Website for programming teacher Web Learning",
             "desc": "Multi-page site, including a dashboard. Has day and night themes for ease of use.",
             "url": "",
             "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/b5ply2jvpxys0b2jkizt.png"
         },
         {
+            "type":"print-production",
             "title": "Обложка",
             "desc": "Книжка это всегда хорошо",
             "url": "",
             "image": "https://res.cloudinary.com/dotkmogck/image/upload/v1727961618/port/psjyatq4bhshr45xnz1q.png"
         },
         {
+            "type": "web-design",
             "title": "Фитаняшка",
             "desc": "Телечка которая чемуто обучает в фитнесе",
             "url": "https://sharon-fitness.vercel.app",
