@@ -39,12 +39,6 @@ export async function generateMetadata({ params }: { params: { lang: string } },
           width: 512,
           height: 512,
           alt: 'J Letter',
-        },
-        {
-          url: `https://julia-designer.vercel.app/julia.png`,
-          width: 512,
-          height: 512,
-          alt: 'J Letter',
         }
       ],
     },
