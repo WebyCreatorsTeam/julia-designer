@@ -8,14 +8,7 @@ const Navbar = async ({ lang }: { lang: string }) => {
 
   return (
     <nav>
-      {/* {location.pathname === '/' &&
-        ( */}
-          {/* <> */}
-            <LocalSwitcher />
-            {/* <span>|</span> */}
-          {/* </>
-        )
-      } */}
+      <LocalSwitcher />
       <Link href={`/${lang}`}>{dict.navbar.links.home}</Link>
       <Link href={`/${lang}/about`}>{dict.navbar.links.about}</Link>
       <Link href={`/${lang}/projects`}>{dict.navbar.links.portfolio}</Link>

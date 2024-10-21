@@ -16,7 +16,6 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { lang: string };
 }>) {
-  // console.log(lang)
   return (
     <html lang={lang} dir={lang === "he" ? "rtl" : "ltr"}>
       <body className={rubik.className}     >
