@@ -26,11 +26,25 @@ const dictionaries
     ru: () => import("@/dictionaries/ru.json").then((module) => module.default)
 };
 
+const seo_dictionaries = {
+    en: () => import("@/dictionaries/en-meta.json").then((module) => module.default),
+    he: () => import("@/dictionaries/he-meta.json").then((module) => module.default),
+    ru: () => import("@/dictionaries/ru-meta.json").then((module) => module.default)
+}
 export const getDictionary = (locale: string
     // , admin = false
 ) => {
     // console.log(locale)
     // if (admin) return dictionaries["en"]();
     const dictionary = dictionaries[locale as keyof typeof dictionaries]();
+    return dictionary;
+};
+
+export const getSEODictionary = (locale: string
+    // , admin = false
+) => {
+    // console.log(locale)
+    // if (admin) return dictionaries["en"]();
+    const dictionary = seo_dictionaries[locale as keyof typeof dictionaries]();
     return dictionary;
 };
