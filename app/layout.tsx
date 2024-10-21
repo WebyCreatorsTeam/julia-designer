@@ -1,9 +1,7 @@
-import type { Metadata, ResolvingMetadata } from "next";
+import type { Metadata } from "next";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export async function generateMetadata( parent: ResolvingMetadata): Promise<Metadata> {
-
-  return {
+export const metadata: Metadata = {
     title: "Julia Voronina | Creative Designs & Branding",
     description:  "Explore stunning graphic design services tailored to elevate your brand. From logos to marketing materials, I bring your vision to life with creativity and expertise.",
     metadataBase: new URL("https://julia-designer.vercel.app"),
@@ -49,9 +47,7 @@ export async function generateMetadata( parent: ResolvingMetadata): Promise<Meta
         'ru': 'https://julia-designer.vercel.app/ru',
         'he': 'https://julia-designer.vercel.app/he',
       },
-    },
-
-  }
+    }
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode;  }>) {
