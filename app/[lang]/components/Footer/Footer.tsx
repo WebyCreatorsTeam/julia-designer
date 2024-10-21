@@ -22,7 +22,8 @@ const Footer = async ({ lang }: { lang: string }) => {
                 <Image src={email} alt={"Email Icon"} width={17} height={14} />
                 <p>rbernally@gmail.com</p>
             </Link>
-            <p>Julia Voronina 2024</p>
+            <p>Julia Voronina  2024 </p>
+            {/*© <a href="https://www.katya-ru.dev">Katya Ru</a> */}
         </footer>
     )
 }
