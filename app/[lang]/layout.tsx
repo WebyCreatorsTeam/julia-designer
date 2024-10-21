@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: { lang: string } },
   const seo_dec = await getSEODictionary(lang)
 
   return {
-    title: { absolute: seo_dec.title || "Julia Voronina | Creative Designs & Branding" },
+    title: seo_dec.title || "Julia Voronina | Creative Designs & Branding",
     description: seo_dec.description || "Explore stunning graphic design services tailored to elevate your brand. From logos to marketing materials, I bring your vision to life with creativity and expertise.",
     metadataBase: new URL("https://julia-designer.vercel.app"),
     keywords: seo_dec.keywords || "graphic design, logo design, branding, creative design, web design, marketing materials, illustration, freelance graphic designer",
@@ -60,48 +60,6 @@ export async function generateMetadata({ params }: { params: { lang: string } },
 
   }
 }
-
-// export const metadata: Metadata = {
-//   title: "Julia Voronina | Creative Designs & Branding",
-//   description: 'Explore stunning graphic design services tailored to elevate your brand. From logos to marketing materials, I bring your vision to life with creativity and expertise.',
-//   keywords: 'graphic design, logo design, branding, creative design, web design, marketing materials, illustration, freelance graphic designer',
-//   authors: [{ name: 'Katya Ru', url: 'https://www.katya-ru.dev' }, { name: 'Julia Voronina' }],
-//   creator: 'Katya Ru',
-
-//   robots: {
-//     index: true,
-//     follow: true,
-//     googleBot: {
-//       index: true,
-//       follow: true,
-//     },
-//   },
-
-//   openGraph: {
-//     title: "Julia Voronina | Creative Designs & Branding",
-//     description: 'Explore stunning graphic design services tailored to elevate your brand. From logos to marketing materials, I bring your vision to life with creativity and expertise.',
-//     url: 'https://julia-designer.vercel.app',
-//     siteName: 'Julia Voronina | Creative Designs & Branding',
-//     type: 'website',
-//     images: [
-//       {
-//         url: 'https://julia-designer.vercel.app/julia.png',
-//         width: 537,
-//         height: 537,
-//         alt: 'Coffe Image',
-//       }
-//     ],
-//   },
-
-//   alternates: {
-//     canonical: 'https://julia-designer.vercel.app',
-//     languages: {
-//       'en': 'https://julia-designer.vercel.app/en',
-//       'ru': 'https://julia-designer.vercel.app/ru',
-//       'he': 'https://julia-designer.vercel.app/he',
-//     },
-//   },
-// };
 
 export default function RootLayout({ children, params: { lang } }: Readonly<{ children: React.ReactNode; params: { lang: string }; }>) {
   return (
