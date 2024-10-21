@@ -11,12 +11,12 @@ export async function generateMetadata({ params }: { params: { lang: string } },
   const seo_dec = await getSEODictionary(lang)
 
   return {
-    title: { absolute: seo_dec.title },
-    description: seo_dec.description,
+    title: { absolute: seo_dec.title || "Julia Voronina | Creative Designs & Branding" },
+    description: seo_dec.description || "Explore stunning graphic design services tailored to elevate your brand. From logos to marketing materials, I bring your vision to life with creativity and expertise.",
     metadataBase: new URL("https://julia-designer.vercel.app"),
-    keywords: seo_dec.keywords,
-    authors: seo_dec.authors,
-    creator: seo_dec.creator,
+    keywords: seo_dec.keywords || "graphic design, logo design, branding, creative design, web design, marketing materials, illustration, freelance graphic designer",
+    authors: seo_dec.authors || [{ name: "Katya Ru", url: "https://www.katya-ru.dev" }, { name: "Julia Voronina" }],
+    creator: seo_dec.creator || "Katya Ru",
 
     robots: {
       index: true,
@@ -28,14 +28,20 @@ export async function generateMetadata({ params }: { params: { lang: string } },
     },
 
     openGraph: {
-      title: seo_dec.title,
-      description: seo_dec.description,
-      url: `https://julia-designer.vercel.app/${lang}`,
-      siteName: seo_dec.title,
+      title: seo_dec.title || "Julia Voronina | Creative Designs & Branding",
+      description: seo_dec.description || "Explore stunning graphic design services tailored to elevate your brand. From logos to marketing materials, I bring your vision to life with creativity and expertise.",
+      url: `https://julia-designer.vercel.app`,
+      siteName: seo_dec.title || "Julia Voronina | Creative Designs & Branding",
       type: 'website',
       images: [
         {
           url: `https://julia-designer.vercel.app/${lang}/julia.png`,
+          width: 512,
+          height: 512,
+          alt: 'J Letter',
+        },
+        {
+          url: `https://julia-designer.vercel.app/julia.png`,
           width: 512,
           height: 512,
           alt: 'J Letter',
