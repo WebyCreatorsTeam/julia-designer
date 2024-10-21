@@ -30,12 +30,12 @@ export async function generateMetadata({ params }: { params: { lang: string } },
     openGraph: {
       title: seo_dec.title,
       description: seo_dec.description,
-      url: 'https://julia-designer.vercel.app',
+      url: `https://julia-designer.vercel.app/${lang}`,
       siteName: seo_dec.title,
       type: 'website',
       images: [
         {
-          url: 'https://julia-designer.vercel.app/julia.png',
+          url: 'https://julia-designer.vercel.app/images/julia.png',
           width: 537,
           height: 537,
           alt: 'Coffe Image',
