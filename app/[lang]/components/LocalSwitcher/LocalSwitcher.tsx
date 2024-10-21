@@ -6,7 +6,6 @@ import { i18n } from '@/i18n.config';
 
 const LocalSwitcher = () => {
     const pathName = usePathname();
-    // const currentLocale = pathName?.split("/")[1];
     const router = useRouter();
 
     const redirectPath = (locale: string) => {
@@ -26,6 +25,7 @@ const LocalSwitcher = () => {
                             <div
                                 onClick={() => redirectPath(locale)}
                                 key={locale}
+                                className={pathName.split("/")[1] === locale ? "active-lang" : ""}
                             >
                                 {locale.toLocaleUpperCase()}
                             </div>

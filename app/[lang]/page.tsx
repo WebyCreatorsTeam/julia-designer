@@ -10,10 +10,10 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
       <section className="hero">
         <Image
           className="hidden lg:block"
-          src={hero2} alt="Julia" width={1920} height={300} />
+          src={hero2} alt="Julia" width={1900} height={300} />
         <Image
           className="lg:hidden block"
-          src={hero} alt="Julia" width={1440} height={300} />
+          src={hero} alt="Julia" width={1400} height={300} />
       </section>
       <Projects lang={lang} />
     </section>

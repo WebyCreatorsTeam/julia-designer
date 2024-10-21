@@ -42,18 +42,26 @@ nav div {
   cursor: pointer;
 }
 
+nav div.active-lang {
+  font-weight: 500;
+}
+
 nav span {
   color: #c24229;
 }
 
+nav a:hover {
+  border-bottom: 1px solid #c24229;
+  height: 24px;
+}
+
 .hero {
-  width: 100vw;
   margin: 47px auto;
   min-width: 320px;
 }
 
 .hero-image {
-  width: 100%;
+  width: 100vw;
   height: 556px;
   object-fit: cover;
 }
