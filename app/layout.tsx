@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Julia Voronina | Creative Designs & Branding",
     description:  "Explore stunning graphic design services tailored to elevate your brand. From logos to marketing materials, I bring your vision to life with creativity and expertise.",
-    metadataBase: new URL("https://julia-designer.vercel.app"),
+    metadataBase: new URL("https://julia-designer.vercel.app/en"),
     keywords:  "graphic design, logo design, branding, creative design, web design, marketing materials, illustration, freelance graphic designer",
     authors:  [{ name: "Katya Ru", url: "https://www.katya-ru.dev" }, { name: "Julia Voronina" }],
     creator:  "Katya Ru",
@@ -21,18 +21,13 @@ export const metadata: Metadata = {
     openGraph: {
       title:  "Julia Voronina | Creative Designs & Branding",
       description:  "Explore stunning graphic design services tailored to elevate your brand. From logos to marketing materials, I bring your vision to life with creativity and expertise.",
-      url: `https://julia-designer.vercel.app`,
+      url: `https://julia-designer.vercel.app/en`,
+      
       siteName:  "Julia Voronina | Creative Designs & Branding",
       type: 'website',
       images: [
         {
-          url: `https://julia-designer.vercel.app/julia.png`,
-          width: 512,
-          height: 512,
-          alt: 'J Letter',
-        },
-        {
-          url: `https://julia-designer.vercel.app/julia.png`,
+          url: `https://julia-designer.vercel.app/en/julia.png`,
           width: 512,
           height: 512,
           alt: 'J Letter',
