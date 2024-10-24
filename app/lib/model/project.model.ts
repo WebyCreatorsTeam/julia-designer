@@ -1,28 +1,30 @@
 import mongoose, { Schema, model } from 'mongoose'
 
 const ProjectSchema = new Schema({
-    urlImage: {
+    lang: {
         type: String,
+        required: true
     },
-    name: {
+    title: {
         type: String,
-        require: [true, "שם הפרויקט חייב להיות מלא"],
+        required: [true, "Title is required"],
     },
-    description: {
+    desc: {
         type: String,
-        require: [true, "תיאור הפרויקט חייב להיות מלא"],
+        required: [true, "Description is required"],
     },
-    urlSite: {
+    type: {
+        type: String,
+        required: [true, "Type is required"]
+    },
+    image: {
+        type: String,
+        required: [true, "Image is required"]
+    },
+    url: {
         type: String
-    },
-    draft: {
-        type: Boolean,
-        default: true
-    },
-    customerFeedback: {
-        type: Schema.Types.ObjectId,
-        ref: "Feedback"
     }
+
 })
 
 const Projects = mongoose.models.Projects || model("Projects", ProjectSchema);
