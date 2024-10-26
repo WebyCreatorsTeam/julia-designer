@@ -2,9 +2,10 @@
 
 import { FC, useActionState, useEffect, useRef } from 'react'
 import AuthBtn from '../../_ui/FormBtn'
+import { IIinitialState } from '@/app/types/interfaces';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const initialState: any = {
+const initialState: IIinitialState = {
     message: null,
     success: null
 }
